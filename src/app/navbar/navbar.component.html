@@ -1,0 +1,44 @@
+<!-- src/app/navbar/navbar.component.html -->
+<div class="navbar-container">
+  <div class="navbar-logo">
+    <img src="assets/logowhite.png" alt="Logo" height="60">
+  </div>
+  <button class="navbar-toggler" (click)="toggleNavbar()">
+    <img src="assets/togglebut.png" alt="togglebut" height="30">
+  </button>
+  <div class="navbar-menu" [class.collapsed]="isCollapsed" [class.not-collapsed]="!isCollapsed">
+    <ul>
+      <div class="navbar1">
+        <li (mouseleave)="handleMouseLeave($event)"><a href="#" (click)="toggleSubmenu($event)">O Festivale</a>
+          <ul class="submenu">
+            <li><a href="#1">Svetlo v meste 2024</a></li>
+            <li><a href="#">Praktické info</a></li>
+            <li><a href="#">Mapa</a></li>
+          </ul>
+        </li>
+        <li (mouseleave)="handleMouseLeave($event)"><a href="#" (click)="toggleSubmenu($event) ">Galeria</a>
+          <ul class="submenu">
+            <li><a href="#1">Kút 2023</a></li>            
+          </ul>
+        </li>
+        <li><a href="#">Press</a></li>
+        <li (mouseleave)="handleMouseLeave($event)"><a href="#" (click)="toggleSubmenu($event)">Pripojte sa k nám</a>
+          <ul class="submenu">
+            <li><a href="#">Dobrovoľníci</a></li>
+            <li><a href="#">Stante sa partnerom</a></li>
+            <li><a href="#">Podporte nás</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Partneri</a></li>
+        <li (mouseleave)="handleMouseLeave($event)"><a href="#" (click)="toggleSubmenu($event)">Kontaky</a>
+          <ul class="submenu">
+            <li><a href="#">Tím</a></li>            
+          </ul>
+        </li>
+        <li><a href="#"><i class="fab fa-facebook-f fa-1x" ></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram fa-1x" ></i></a></li>
+      </div>
+      
+    </ul>
+  </div>
+</div>
