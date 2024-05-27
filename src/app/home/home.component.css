@@ -1,7 +1,59 @@
-.home{
-    border: none ;
+.home {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; 
+   
 }
 
-.home img{
+.home img {   
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    
+}
+
+.homeText {    
+    position: absolute;
+    bottom: 5%; /* Align the text container to the bottom of the image */
+    left: 5%;   /* Align the text container to the left of the image */
+    width: 100%;
+    padding: 10px;    
+    color: white;
+    box-sizing: border-box;
+    text-align: left; /* Ensures text alignment to the left */
+}
+
+.homeText p {
+    margin: 0;
+    font-size: 300px; /* Base font size, adjustable in media queries */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+    .homeText p {
+        font-size: 24px; /* Smaller font size for smaller screens */
+        padding: 5px; /* Less padding */
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .homeText p {
+        font-size: 28px; /* Slightly larger font for tablets */
+        padding: 8px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .homeText p {
+        font-size: 30px; /* Ideal font size for desktops */
+        padding: 10px; /* Adequate padding for readability */
+    }
 }
