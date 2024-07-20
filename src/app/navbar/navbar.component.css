@@ -1,0 +1,156 @@
+/* src/app/navbar/navbar.component.css */
+
+
+.navbar-container {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: transparent;
+  color: white;
+  height: 120px;
+  position: fixed;  /* Changed from absolute to fixed */
+  top: 0;           /* Ensure it stays at the top */
+  left: 0;          /* Align it from the left */
+  right: 0;         /* Align it from the right */
+  z-index: 1000;
+  
+}
+
+.navbartop{  
+ font-size: 15px; 
+}
+
+.navbarbot{
+  
+  font-size: 20px;
+}
+
+.navbar-toggler{
+  background-color: transparent;
+}
+
+.navbar-logo img {
+  
+  height: 80px;
+}
+
+.navbar-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu ul li {
+  margin-left: 20px;
+}
+
+
+.navbar-menu ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+    
+}
+
+.navbar-menu ul li a:hover {
+  background-color: transparent;
+}
+
+.navbar1{
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-toggler{
+  display: none;
+}
+
+.navbar-menu ul li .submenu {
+  display: none;
+  position: absolute; 
+  margin-left: -20px; 
+  
+  background-color: transparent; /* Change as needed */
+  color: black; /* Ensure text is visible */
+  width: 20%; /* Submenu width matches the parent item */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Optional */
+  z-index: 100;
+}
+
+/* Show submenu on hover */
+.navbar-menu ul li:hover .submenu {
+  display: block !important;
+}
+
+
+
+
+
+@media (max-width: 1210px) {
+  .navbar-toggler {
+    display: block; /* Show toggler button in smaller screens */
+    height: 100px;
+  }
+
+  .navbar1{
+    flex-direction: column;
+    align-items: flex-end;
+    
+  }
+
+  .navbar-menu.collapsed {
+    display: none; /* Hide the menu on smaller screens */
+  }  
+
+  .navbar-menu.not-collapsed {
+    display: flex; /* Ensures the menu displays */
+    flex-direction: column; /* Stacks items vertically */
+    position: fixed; /* Makes the menu float over content */
+    top: 100px;           /* Ensure it stays at the top */
+    left: 0; 
+    background-color: transparent; /* Adds background color for visibility */
+    width: 100%;
+    
+    left: 0; /* Aligns the menu to the left */
+    z-index: 100; /* Ensures the menu layers above other content */
+  }
+
+  .navbar-menu ul li{
+    position: relative;
+  }
+  
+
+  .navbar-menu ul li .submenu {
+    
+    position: absolute;    
+    top:0;
+    right: 100%;    
+    background-color: transparent; /* Change as needed */
+    color: black; /* Ensure text is visible */
+    width: 200px; /* Submenu width matches the parent item */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Optional */
+    z-index: 100;
+  }
+
+  
+
+ 
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-logo img{
+      width: 30%;
+      height: 30%;
+    }
+
+    .navbar-toggler img{
+      height: 20px;
+    }
+ 
+}
