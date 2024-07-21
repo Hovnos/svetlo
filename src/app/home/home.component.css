@@ -106,29 +106,21 @@
     display: grid;
     background-color: #ffffff;
     grid-template-rows: 40vh;
-    grid-template-columns: 33.3vw 33.4vw 33.3vw;    
-    align-items: center; 
-    justify-content: center; 
-    text-align: left;       
-    margin-left: 15vw;
+    grid-template-columns: repeat(3, 1fr);     
+    text-align: left;  
     font-weight: normal;
     font-size: 1.25rem;
-    line-height: 1.3;
+    line-height: 1.3;   
+    place-items: center;/*tototo*/
     
 }
-
-h3 {
-    margin-bottom: 7px; 
-    padding-bottom: 0; 
-  }
-
-
 
 .homegrid2{
     display: grid;
     background-color: #D7EDF5;
     grid-template-rows: 50vh;
-    grid-template-columns: 33.3vw 33.4vw 33.3vw;    
+    grid-template-columns: repeat(3, 1fr);    
+    place-items: center;
     
     
 }
@@ -229,11 +221,22 @@ h3 {
     font-size: 1.875rem;
 }
 
-@media (-webkit-device-pixel-ratio: 1.25) {
-    * {
-      zoom: 0.8;
+@media only screen and (min-resolution: 1.25dppx){
+    .vcislach{
+        margin-top: -1.5625rem;
     }
-  }
+    .image-text{
+        font-size: 1rem;
+    }
+    .homegrid1{
+        font-size: 1rem;
+    }
+    .home5text{
+        font-size: 1rem;
+    }
+
+}
+
 
 
 @media only screen and (max-width: 600px) {
@@ -358,21 +361,24 @@ h3 {
 
 @media only screen and (max-width: 1200px) {
     
-    .homegrid2 div{
-        font-size: 1rem;        
-    }
-       
+         
 
     .video{
         width: 100%;
     }
 
-     
-    
+    .home5text{
+        font-size: 0.8rem;;
+    }
 
-   
-    .vcislach{
-        margin-top: -1rem;
+    .home4{
+        font-size: 1rem;
+    }
+    .image-text{
+        font-size: 0.8rem;
+    }
+    .homegrid1{
+        font-size: 0.8rem;
     }
 
 }
