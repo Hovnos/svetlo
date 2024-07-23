@@ -1,0 +1,112 @@
+.home5{
+    
+    display: grid;
+    grid-template-rows: 40vh;
+    grid-template-columns: 20vw 45vw 35vw;  
+    justify-content: center;
+    align-items: center;
+    text-align: left;    
+    background-color: #D7EDF5;
+      
+    max-height: 100%;
+    max-width: 100%;  
+    overflow: hidden;  
+    
+}
+.home5 img{
+    width: 40%;       
+    margin-left: 10vw;
+    margin-top: 20vh;
+    overflow: hidden;
+}
+
+.home5text {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    
+    justify-content: flex-end; 
+    align-self: flex-end;
+    padding-bottom: 15vh;
+    padding-left: 5vw;
+    font-size: 1.25rem;
+  }
+
+.partneri{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 5vw;    
+    font-size: 1.25rem;
+}
+
+.partnerigrid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    overflow: hidden;
+    padding: 4vw;
+  }
+
+.partnerigrid{
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    height: 20vh;
+}
+
+.partnerigrid img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+
+  @media only screen and (min-resolution: 1.25dppx){
+    
+    .home5text{
+        font-size: 1rem;
+    }
+    .partneri{
+        font-size: 1rem;
+    }
+
+}
+@media only screen and (max-width: 600px){
+
+.partneri{
+        font-size: 0.8rem;
+    }
+
+.home5{  
+        
+    grid-template-rows: 40vh;
+    grid-template-columns: 30vw 70vw;                 
+    
+}
+.home5text {
+    grid-column: 2; 
+  }
+  
+
+
+.home5text{        
+    font-size: 0.8rem;
+    padding-bottom: 10vh;
+    
+}
+
+
+.home5 img{
+width: 100%;  
+margin-left: 0vw;
+margin-top: 40vh;
+overflow: hidden;
+}
+
+
+
+
+
+}

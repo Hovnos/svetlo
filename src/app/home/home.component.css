@@ -7,39 +7,7 @@
     margin-top: -1.5625rem;
 }
 
-.home5{
-    
-    display: grid;
-    grid-template-rows: 40vh;
-    grid-template-columns: 20vw 45vw 35vw;  
-    justify-content: center;
-    align-items: center;
-    text-align: left;    
-    background-color: #D7EDF5;
-      
-    max-height: 100%;
-    max-width: 100%;  
-    overflow: hidden;  
-    
-}
-.home5 img{
-    width: 40%;       
-    margin-left: 10vw;
-    margin-top: 20vh;
-    overflow: hidden;
-}
 
-.home5text {
-    display: flex; 
-    flex-direction: column; 
-    align-items: flex-start; 
-    
-    justify-content: flex-end; 
-    align-self: flex-end;
-    padding-bottom: 15vh;
-    padding-left: 5vw;
-    font-size: 1.25rem;
-  }
 
 .home4{
     height: 30vh;
@@ -50,6 +18,7 @@
     padding-left: 15vw;
     padding-right: 15vw;
     font-size: 1.25rem;
+    background-color: #D7EDF5;
     
 }
 
@@ -231,13 +200,32 @@
     .homegrid1{
         font-size: 1rem;
     }
-    .home5text{
+    
+
+} 
+
+
+@media only screen and (max-width: 1200px) {
+    
+         
+
+    .video{
+        width: 100%;
+    }
+
+    
+
+    .home4{
         font-size: 1rem;
+    }
+    .image-text{
+        font-size: 0.8rem;
+    }
+    .homegrid1{
+        font-size: 0.8rem;
     }
 
 }
-
-
 
 @media only screen and (max-width: 600px) {
     .home img {      
@@ -301,7 +289,7 @@
         align-items: center; 
         justify-content: center;           
         text-align: center;       
-        font-size: 15px;    
+        font-size: 0.8rem;    
         margin: 0px;   
         padding: 20px;        
         display: flex; 
@@ -322,63 +310,13 @@
 
     .home4{
         height: 50vh;
-        font-size: 12px;
+        font-size: 0.8rem;
         padding-left: 0;
-        padding-right: 0;
-        
-    }
-    .home5{  
-        
-        grid-template-rows: 40vh;
-        grid-template-columns: 30vw 70vw;                 
-        
-    }
-    .home5text {
-        grid-column: 2; 
-      }
-      
-
-    
-    .home5text{        
-        font-size: 12px;
-        padding-bottom: 10vh;
-        
+        padding-right: 0;       
     }
 
-    .home5 img{
-    width: 100%;  
-    margin-left: 0vw;
-    margin-top: 40vh;
-    overflow: hidden;
-    }
     .vcislach{
         margin-top: -15px;
     }   
     
-}
- 
-
-
-@media only screen and (max-width: 1200px) {
-    
-         
-
-    .video{
-        width: 100%;
-    }
-
-    .home5text{
-        font-size: 0.8rem;;
-    }
-
-    .home4{
-        font-size: 1rem;
-    }
-    .image-text{
-        font-size: 0.8rem;
-    }
-    .homegrid1{
-        font-size: 0.8rem;
-    }
-
 }
